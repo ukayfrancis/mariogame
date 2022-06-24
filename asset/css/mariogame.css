@@ -1,0 +1,114 @@
+body{
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+}
+.sky{
+    width: 100%;
+    height: 250px;
+    background-color: skyblue;
+}
+
+.grass{
+    width: 100%;
+    height: 150px;
+    background-color: green;
+}
+
+.road{
+    width: 100%;
+    height: 210px;
+    background-color: #333333;
+}
+
+.line{
+    position: relative;
+    top: 100px;
+    border-bottom: 10px dashed white;
+}
+
+.mario{
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    animation-name: Mario;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+}
+
+.lucigi{
+    position: absolute;
+    top: 450px;
+    width: 150px;
+    height: 150px;
+    transform: rotateY(180deg);
+    left: 1050px;
+    animation-name: lucigi;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+    /* animation-direction: alternate; */
+    
+}
+
+@keyframes Mario {
+    0%{
+        top: 250px;
+        left: 0px;
+    }
+    100%{
+        top: 250px;
+         left: 1050px;
+         
+         
+    }
+
+} 
+
+
+
+@keyframes lucigi{
+    0%{
+        top: 450px;
+        left: 1050px;
+    }
+    100%{
+        left: 0px;
+    }
+} 
+
+
+.cloud{
+    transform: scale(0.2);
+    position: absolute;
+    top: -100px;
+    left: -40px;
+    opacity: 0.9;
+    animation-name: wind;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes wind {
+    0%{
+        top: -100px;
+        left: -40px;
+    }
+
+    100%{
+        top: -100px;
+        left: 1000px;
+    }
+}
+
+
